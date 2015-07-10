@@ -17,9 +17,19 @@ namespace TestApplication
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This function is coming soon.", "YouTube Button");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This function is coming soon.", "Facebook Button");
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("This function is coming soon.", "Twitter Button");
         }
     }
 }
