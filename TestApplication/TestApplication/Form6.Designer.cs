@@ -61,6 +61,8 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form6";
             this.Text = "Options";
             this.ResumeLayout(false);
