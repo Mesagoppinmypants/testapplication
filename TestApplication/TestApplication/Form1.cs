@@ -17,6 +17,11 @@ namespace TestApplication
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Box1_Checked();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This function is coming soon.", "YouTube Button");
@@ -49,17 +54,17 @@ namespace TestApplication
 
         private void Box1_Checked()
         {
-            button2.Enabled = checkBox1.Checked;
+            button1.Enabled = checkBox1.Checked;
         }
 
         private void Box2_Checked()
         {
-            button3.Enabled = checkBox2.Checked;
+            button2.Enabled = checkBox2.Checked;
         }
 
         private void Box3_Checked()
         {
-            button1.Enabled = checkBox3.Checked;
+            button3.Enabled = checkBox3.Checked;
         }
     }
 }
