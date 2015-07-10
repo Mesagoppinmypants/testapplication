@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SavingUserSettings.Properties;
 
 namespace TestApplication
 {
@@ -38,7 +37,7 @@ namespace TestApplication
             MessageBox.Show("This function is coming soon.", "Night Mode");
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
             MessageBox.Show("Your settings will not be saved, but we are working hard to get this working.", "Saving Settings");
@@ -47,6 +46,11 @@ namespace TestApplication
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void Form6_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Properties.Settings.Default.textbox = checkBox1.Checked;
         }
     }
 }
