@@ -13,3 +13,5 @@ C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\Test
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form4.resources
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form6.resources
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form5.resources
+C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form7.resources
+C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form8.resources

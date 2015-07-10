@@ -54,7 +54,7 @@ namespace TestApplication
             ios.Show();
         }
 
-          // Options
+        // Options
         private void button5_Click(object sender, EventArgs e)
         {
             Form6 options = new Form6();
@@ -65,6 +65,13 @@ namespace TestApplication
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        // Extras
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form7 extras = new Form7();
+            extras.Show();
         }
     }
 }
