@@ -17,6 +17,11 @@ namespace TestApplication
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Box1_Checked(); // This isn't loading..
+        }
+
         // Yoverion Kun's YouTube
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,6 +51,21 @@ namespace TestApplication
         {
             Form5 ios = new Form5();
             ios.Show();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            Box1_Checked();
+        }
+
+        private void Box1_Checked()
+        {
+            button1.Enabled = checkBox1.Checked;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
