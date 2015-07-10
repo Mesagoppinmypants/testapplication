@@ -22,21 +22,35 @@ namespace TestApplication
             Box1_Checked(); // This isn't loading..
         }
 
+        // Yoverion Kun's YouTube
         private void button1_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("This function is coming soon.", "YouTube Button");
-            Form2 form = new Form2();
-            form.Show();
+            Form2 yov = new Form2();
+            yov.Show();
         }
 
+        // Solvaxus Kun's YouTube
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This function is coming soon.", "Facebook Button");
+            //MessageBox.Show("This function is coming soon.", "Facebook Button");
+            Form3 solv = new Form3();
+            solv.Show();
         }
 
+        // Exilos Kun's YouTube
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This function is coming soon.", "Twitter Button");
+            //MessageBox.Show("This function is coming soon.", "Twitter Button");
+            Form4 exi = new Form4();
+            exi.Show();
+        }
+
+        // Iosnowore Kun's YouTube
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 ios = new Form5();
+            ios.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -44,29 +58,9 @@ namespace TestApplication
             Box1_Checked();
         }
 
-        private void checkbox2_CheckedChanged(object sender, EventArgs e)
-        {
-            Box2_Checked();
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            Box3_Checked();
-        }
-
         private void Box1_Checked()
         {
             button1.Enabled = checkBox1.Checked;
-        }
-
-        private void Box2_Checked()
-        {
-            button2.Enabled = checkBox2.Checked;
-        }
-
-        private void Box3_Checked()
-        {
-            button3.Enabled = checkBox3.Checked;
         }
 
         private void label1_Click(object sender, EventArgs e)

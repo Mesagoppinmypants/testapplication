@@ -39,6 +39,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(284, 262);
             this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.Url = new System.Uri("http://www.YouTube.com/user/XPPINMYPANTSX", System.UriKind.Absolute);
             // 
             // Form4
             // 
@@ -47,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Iosnowore Kun";
             this.ResumeLayout(false);
 
         }
