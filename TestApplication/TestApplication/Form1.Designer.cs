@@ -135,7 +135,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "<DJO>";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "<DJO> Tracker";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

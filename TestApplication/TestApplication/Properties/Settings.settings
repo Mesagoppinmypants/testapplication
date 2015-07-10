@@ -1,15 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestApplication.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="Language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SetLanguage</Value>
-    </Setting>
-    <Setting Name="SoundEnable" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SetSoundEnable</Value>
-    </Setting>
-    <Setting Name="NightMode" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SetNightMode</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

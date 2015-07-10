@@ -40,7 +40,7 @@ namespace TestApplication
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            MessageBox.Show("Your settings will not be saved, but we are working hard to get this working.", "Saving Settings");
+            MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace TestApplication
 
         private void Form6_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Properties.Settings.Default.textbox = checkBox1.Checked;
+           // Properties.Settings.Default.textbox = checkBox1.Checked;
         }
     }
 }

@@ -22,41 +22,5 @@ namespace TestApplication.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SetLanguage")]
-        public string Language {
-            get {
-                return ((string)(this["Language"]));
-            }
-            set {
-                this["Language"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SetSoundEnable")]
-        public string SoundEnable {
-            get {
-                return ((string)(this["SoundEnable"]));
-            }
-            set {
-                this["SoundEnable"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SetNightMode")]
-        public string NightMode {
-            get {
-                return ((string)(this["NightMode"]));
-            }
-            set {
-                this["NightMode"] = value;
-            }
-        }
     }
 }
