@@ -29,4 +29,9 @@
 *.hex
 
 # Debug files
-*.dSYM/
+TestApplication/TestApplication/obj/Debug/
+TestApplication/TestApplication/bin/Debug/
+
+
+# Custom Added Ignores
+*.txt
