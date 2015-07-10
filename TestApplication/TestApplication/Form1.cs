@@ -19,7 +19,7 @@ namespace TestApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Box1_Checked(); // This isn't loading..
+
         }
 
         // Yoverion Kun's YouTube
@@ -41,9 +41,9 @@ namespace TestApplication
         // Exilos Kun's YouTube
         private void button3_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("This function is coming soon.", "Twitter Button");
-            Form4 exi = new Form4();
-            exi.Show();
+            MessageBox.Show("This function is coming soon.", "Exilos Kun");
+            //Form4 exi = new Form4();
+            //exi.Show();
         }
 
         // Iosnowore Kun's YouTube
@@ -53,16 +53,14 @@ namespace TestApplication
             ios.Show();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+          // Options
+        private void button5_Click(object sender, EventArgs e)
         {
-            Box1_Checked();
+            Form6 options = new Form6();
+            options.Show();
         }
 
-        private void Box1_Checked()
-        {
-            button1.Enabled = checkBox1.Checked;
-        }
-
+        // Main Text
         private void label1_Click(object sender, EventArgs e)
         {
 
