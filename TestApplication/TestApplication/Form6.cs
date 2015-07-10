@@ -27,6 +27,11 @@ namespace TestApplication
             Do_Checked_checkBox2();
         }
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            Do_Checked_checkBox3();
+        }
+
         private void Do_Checked_checkBox1()
         {
             MessageBox.Show("This function is coming soon.", "Music Enable/Disable");
@@ -56,11 +61,6 @@ namespace TestApplication
         private void Form6_FormClosed(object sender, FormClosedEventArgs e)
         {
            // Properties.Settings.Default.textbox = checkBox1.Checked;
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }
