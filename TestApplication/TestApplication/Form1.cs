@@ -19,12 +19,14 @@ namespace TestApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Box1_Checked();
+            Box1_Checked(); // This isn't loading..
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This function is coming soon.", "YouTube Button");
+            //MessageBox.Show("This function is coming soon.", "YouTube Button");
+            Form2 form = new Form2();
+            form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,6 +67,11 @@ namespace TestApplication
         private void Box3_Checked()
         {
             button3.Enabled = checkBox3.Checked;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
