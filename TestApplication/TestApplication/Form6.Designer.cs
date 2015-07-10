@@ -52,6 +52,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Night Mode";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Form6
             // 

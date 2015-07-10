@@ -19,7 +19,22 @@ namespace TestApplication
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            Do_Checked_checkBox1();
+        }
 
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            Do_Checked_checkBox2();
+        }
+
+        private void Do_Checked_checkBox1()
+        {
+            MessageBox.Show("This function is coming soon.", "Sound");
+        }
+
+        private void Do_Checked_checkBox2()
+        {
+            MessageBox.Show("This function is coming soon.", "Night Mode");
         }
     }
 }
