@@ -38,12 +38,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
-            //
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(248, 70);
+            this.button1.Location = new System.Drawing.Point(231, 70);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.Size = new System.Drawing.Size(100, 50);
             this.button1.TabIndex = 2;
             this.button1.Text = "Exilos Kun";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,7 +53,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(12, 70);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
+            this.button2.Size = new System.Drawing.Size(100, 50);
             this.button2.TabIndex = 0;
             this.button2.Text = "Yoverion Kun";
             this.button2.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(12, 153);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 23);
+            this.button3.Size = new System.Drawing.Size(100, 50);
             this.button3.TabIndex = 1;
             this.button3.Text = "Solvaxus Kun";
             this.button3.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(248, 153);
+            this.button4.Location = new System.Drawing.Point(231, 153);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 23);
+            this.button4.Size = new System.Drawing.Size(100, 50);
             this.button4.TabIndex = 7;
             this.button4.Text = "Iosnowore Kun";
             this.button4.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(142, 270);
+            this.button5.Location = new System.Drawing.Point(124, 256);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 50);
             this.button5.TabIndex = 8;
             this.button5.Text = "Options";
             this.button5.UseVisualStyleBackColor = true;
