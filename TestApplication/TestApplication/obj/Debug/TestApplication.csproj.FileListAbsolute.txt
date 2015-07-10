@@ -9,3 +9,6 @@ C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\Test
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.pdb
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form1.resources
 C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form2.resources
+C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form3.resources
+C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form4.resources
+C:\Users\MESAGOPPINMYPANTS\Documents\GitHub\testapplication\TestApplication\TestApplication\obj\Debug\TestApplication.Form5.resources
