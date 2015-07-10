@@ -69,7 +69,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form8";
-            this.Text = "Extras";
+            this.Text = "About";
             this.ResumeLayout(false);
             this.PerformLayout();
 

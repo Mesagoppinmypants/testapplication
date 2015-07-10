@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form4";
-            this.Text = "Iosnowore Kun";
+            this.Text = "Exilos Kun";
             this.ResumeLayout(false);
 
         }

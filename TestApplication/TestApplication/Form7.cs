@@ -20,6 +20,7 @@ namespace TestApplication
         private void button1_Click(object sender, EventArgs e)
         {
             // About
+            this.Close();
             Form8 about = new Form8();
             about.Show();
         }
