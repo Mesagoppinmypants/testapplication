@@ -69,7 +69,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(105, 67);
+            this.checkBox1.Location = new System.Drawing.Point(105, 137);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(94, 17);
             this.checkBox1.TabIndex = 3;
@@ -80,8 +80,9 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(105, 90);
+            this.checkBox2.Location = new System.Drawing.Point(105, 160);
             this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox2.Size = new System.Drawing.Size(106, 17);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Enable YouTube";
@@ -91,7 +92,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(105, 113);
+            this.checkBox3.Location = new System.Drawing.Point(105, 183);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(110, 17);
             this.checkBox3.TabIndex = 5;
