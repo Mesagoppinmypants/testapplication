@@ -41,14 +41,14 @@ namespace TestApplication
         private void Do_Checked_checkBox1()
         {
             SystemSounds.Hand.Play();
-            MessageBox.Show("This function is coming soon.", "Music Enable/Disable");
+            MessageBox.Show("This function is coming soon.", "Sound Effects Enable/Disable");
         }
 
 
         private void Do_Checked_checkBox2()
         {
             //SystemSounds.Hand.Play();
-            //MessageBox.Show("This function is coming soon.", "Night Mode");
+            //MessageBox.Show("This function is coming soon.", "Disable Music");
             if (checkBox2.Checked == true)
             {
                 SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
@@ -65,7 +65,7 @@ namespace TestApplication
         private void Do_Checked_checkBox3()
         {
             SystemSounds.Hand.Play();
-            MessageBox.Show("This function is coming soon.", "All Sound Enable/Disable");
+            MessageBox.Show("This function is coming soon.", "Night Mode Enable/Disable");
         }
 
         // When the user clicks the "apply" button
