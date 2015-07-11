@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -8,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Resources;
+using System.IO;
 
 namespace TestApplication
 {
@@ -137,5 +140,54 @@ namespace TestApplication
                 Properties.Settings.Default.Save();
             }
         }
+
+        // Try to get sound by string.
+/*        private ResourceManager DJOResourcesManager;
+
+        private bool _soundOption;
+
+        public bool soundOption
+        {
+            get
+            {
+                return _soundOption;
+            }
+            set
+            {
+                _soundOption = value;
+                SetAppSetting("SoundEnable", ((_soundOption == true) ? "true : "false"));
+
+            }
+        }
+        
+        DJOResourcesManager = new ResourceManager("DJO Tracker.DJORes", Assembly.GetExecutingAssembly());
+
+
+        public Stream GetSound(string filename)
+        {
+            byte[] x = ((byte[])DJOResourcesManager.GetObject(filename));
+
+            if (x == null) { return null; }
+
+            return new MemoryStream(x);
+        }
+        
+        public void PlaySound(string filename)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(this.GetSound(filename));
+            if (this.soundOption) { player.Play (); }
+        }
+        
+        public void SetAppSetting(string key, string value)
+        {
+            if (config.AppSettings.Settings[key] != null)
+            {
+                config.AppSettings.Settings.Remove(key);
+            }
+            config.AppSettings.Settings.Add(key, value);
+
+            try
+            {
+                config.Save(ConfigurationSaveMode.Modified);*/
     }
 }
