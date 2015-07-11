@@ -98,5 +98,12 @@ namespace TestApplication
             Form7 extras = new Form7();
             extras.Show();
         }
+
+        // See if we can import these files and use them as strings
+        public void Initialize()
+        {          
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer clickSound = new SoundPlayer(@"c:\projects\click.wav");
+        }
     }
 }
