@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TestApplication
 {
@@ -38,18 +39,21 @@ namespace TestApplication
         
         private void Do_Checked_checkBox1()
         {
+            SystemSounds.Hand.Play();
             MessageBox.Show("This function is coming soon.", "Music Enable/Disable");
         }
 
         
         private void Do_Checked_checkBox2()
         {
+            SystemSounds.Hand.Play();
             MessageBox.Show("This function is coming soon.", "Night Mode");
         }
 
         
         private void Do_Checked_checkBox3()
         {
+            SystemSounds.Hand.Play();
             MessageBox.Show("This function is coming soon.", "All Sound Enable/Disable");
         }
 
@@ -57,6 +61,7 @@ namespace TestApplication
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            SystemSounds.Hand.Play();
             MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
         }
 
