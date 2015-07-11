@@ -56,9 +56,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(101, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Version 1.0";
+            this.label3.Text = "Version v0.5";
             // 
             // Form8
             // 
