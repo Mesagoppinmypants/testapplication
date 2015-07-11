@@ -32,6 +32,13 @@ namespace TestApplication
             {
                 this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
             }
+            // Need to figure out a way to check with Options form
+            //if (Options.checkBox2.Checked = true)
+            //if (checkBox2.IsChecked.Equals(true))
+            {
+                //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+                //backgroundSound.Stop(); -- Enable this when the above works
+            }
             //clickSound.Play();
         }
 
@@ -39,8 +46,8 @@ namespace TestApplication
         private void button1_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("This function is coming soon.", "YouTube Button");
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //backgroundSound.Stop();
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            backgroundSound.Stop();
             Yov yov = new Yov();
             yov.Show();
             //OpenFileDialog ofd = new OpenFileDialog();
@@ -110,11 +117,11 @@ namespace TestApplication
 
         // See if we can import these files and use them as strings
         public void Initialize()
-        {          
+        {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             SoundPlayer clickSound = new SoundPlayer(@"c:\projects\click.wav");
         }
-    
+
         public void MainPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)

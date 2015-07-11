@@ -18,7 +18,7 @@ namespace TestApplication
             InitializeComponent();
         }
 
-        private void Options_Load(object sender, EventArgs e)
+        public void Options_Load(object sender, EventArgs e)
         {
             checkBox1.Checked = Properties.Settings.Default.EffectsDisable;
             checkBox2.Checked = Properties.Settings.Default.MusicDisable;
@@ -78,21 +78,23 @@ namespace TestApplication
         }
 
         // When the user clicks the "apply" button
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
+            //Properties.Settings.Default.MusicDisable = newValueCheckBox;
+            //Properties.Settings.Default.Save();
             this.Close();
             SystemSounds.Hand.Play();
             MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
         }
 
         // This is when the user changes the language option.
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         // This is when the page closes
-        private void Options_FormClosed(object sender, FormClosedEventArgs e)
+        public void Options_FormClosed(object sender, FormClosedEventArgs e)
         {
             Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
             Properties.Settings.Default.MusicDisable = checkBox2.Checked;
