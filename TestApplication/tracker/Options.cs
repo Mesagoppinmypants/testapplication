@@ -17,13 +17,15 @@ namespace TestApplication
         {
             InitializeComponent();
         }
+        public static bool _ChangeLanguage = false; // This will indicate if the void needs to be called
+        public static string _Language = ""; // This will indicate our new language
 
         public void Options_Load(object sender, EventArgs e)
         {
             checkBox1.Checked = Properties.Settings.Default.EffectsDisable;
             checkBox2.Checked = Properties.Settings.Default.MusicDisable;
             checkBox3.Checked = Properties.Settings.Default.NightMode;
-            //comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect; -- Enable when saving is fixed below.
+            comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect; // Enable when saving is fixed below.
         }
         // Disable sound effects
         public void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace TestApplication
             Do_Checked_checkBox3();
         }
 
-        
+
         public void Do_Checked_checkBox1()
         {
             SystemSounds.Hand.Play();
@@ -70,7 +72,7 @@ namespace TestApplication
             }
         }
 
-        
+
         public void Do_Checked_checkBox3()
         {
             SystemSounds.Hand.Play();
@@ -83,14 +85,30 @@ namespace TestApplication
             //Properties.Settings.Default.MusicDisable = newValueCheckBox;
             //Properties.Settings.Default.Save();
             this.Close();
-            SystemSounds.Hand.Play();
-            MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
+            //SystemSounds.Hand.Play();
+            //MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
         }
 
         // This is when the user changes the language option.
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem.ToString() == "English")
+            {
+                ChangeLanguage("en");
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Spanish")
+            {
+                ChangeLanguage("sp");
+            }
+        }
 
+        private void ChangeLanguage(string lang)
+        {
+            foreach (Control c in this.Controls)
+            {
+                ComponentResourceManager crm = new ComponentResourceManager(typeof(MainPage));
+                crm.ApplyResources(c, c.Name, new CultureInfo(lang));
+            }
         }
 
         // This is when the page closes
@@ -99,7 +117,7 @@ namespace TestApplication
             Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
             Properties.Settings.Default.MusicDisable = checkBox2.Checked;
             Properties.Settings.Default.NightMode = checkBox3.Checked;
-           // Properties.Settings.Default.LanguageSelect = comboBox1.SelectedItem; -- FIXME
+            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedValue; // FIXME
             Properties.Settings.Default.Save();
         }
     }
