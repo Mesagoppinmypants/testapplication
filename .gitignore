@@ -35,3 +35,9 @@ TestApplication/TestApplication/bin/Debug/
 
 # Custom Added Ignores
 *.txt
+*.manifest
+*.xml
+*.resources
+*.settings
+*.resx
+*.application
