@@ -50,6 +50,7 @@
             this.Name = "Exi";
             this.Text = "Exilos Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Exi_FormClosing);
             this.ResumeLayout(false);
 
         }

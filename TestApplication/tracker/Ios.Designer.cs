@@ -50,6 +50,7 @@
             this.Name = "Ios";
             this.Text = "Iosnowore Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ios_FormClosing_1);
             this.ResumeLayout(false);
 
         }

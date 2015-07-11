@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TestApplication
 {
@@ -15,6 +16,12 @@ namespace TestApplication
         public Solv()
         {
             InitializeComponent();
+        }
+
+        private void Solv_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            backgroundSound.PlayLooping();
         }
     }
 }

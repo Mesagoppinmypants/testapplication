@@ -50,6 +50,7 @@
             this.Name = "Yov";
             this.Text = "Yoverion Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Yov_FormClosing);
             this.ResumeLayout(false);
 
         }

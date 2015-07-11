@@ -50,6 +50,7 @@
             this.Name = "Solv";
             this.Text = "Solvaxus Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Solv_FormClosing);
             this.ResumeLayout(false);
 
         }

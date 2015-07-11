@@ -37,7 +37,7 @@ namespace TestApplication
             //if (checkBox2.IsChecked.Equals(true))
             {
                 //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-                //backgroundSound.Stop(); -- Enable this when the above works
+                //backgroundSound.Stop(); // Enable this when the above works
             }
             //clickSound.Play();
         }

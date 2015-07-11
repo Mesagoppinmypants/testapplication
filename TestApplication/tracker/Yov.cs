@@ -17,8 +17,8 @@ namespace TestApplication
         {
             InitializeComponent();
         }
-        
-        private void Yov_FormLoad(object sender, FormClosedEventArgs e)
+
+        private void Yov_FormLoad(object sender, EventArgs e)
         {
             //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             //backgroundSound.Stop();
@@ -31,9 +31,37 @@ namespace TestApplication
 
         private void Yov_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Do_Checked_checkBox2();
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //backgroundSound.Play();
+            /* DialogResult dialog = MessageBox.Show("Testing phase. -- Want to exit?",
+                 "Exit", MessageBoxButtons.YesNo);
+             if (dialog == DialogResult.Yes)
+             {
+                 Application.Exit();
+             }
+             else if (dialog == DialogResult.No)
+             {
+                 e.Cancel = true;
+             }
+             //Do_Checked_checkBox2();
+             //MessageBox.Show("Sound should turn on now."); // For testing purposes
+             //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+             //backgroundSound.Play();*/
+        }
+
+        private void Yov_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            backgroundSound.PlayLooping();
+            //MessageBox.Show("Sound should turn on now."); // For testing purposes
+
+            /* DialogResult dialog = MessageBox.Show("Testing phase. -- Want to exit?",
+               "Exit", MessageBoxButtons.YesNo);
+             if (dialog == DialogResult.Yes)
+             {
+                 Application.Exit();
+             }
+             else if (dialog == DialogResult.No)
+             {
+                 e.Cancel = true;*/
         }
     }
 }
