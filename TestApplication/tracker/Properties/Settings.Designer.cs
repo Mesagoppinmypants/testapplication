@@ -106,5 +106,17 @@ namespace TestApplication.Properties {
                 this["InitialLocation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ChangeLanguage {
+            get {
+                return ((bool)(this["ChangeLanguage"]));
+            }
+            set {
+                this["ChangeLanguage"] = value;
+            }
+        }
     }
 }
