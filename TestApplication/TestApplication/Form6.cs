@@ -52,6 +52,7 @@ namespace TestApplication
             if (checkBox2.Checked == true)
             {
                 SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+                //TestApplication.Form1.backgroundSound.Stop();
                 backgroundSound.Stop();
             }
             else
