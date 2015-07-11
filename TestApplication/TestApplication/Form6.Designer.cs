@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form6
+    partial class Options
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,27 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(101, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Apply";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(95, 87);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(131, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Disable Sound Effects";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
@@ -70,16 +91,6 @@
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(101, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Apply";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -89,18 +100,7 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Language";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(95, 87);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(131, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Disable Sound Effects";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // Form6
+            // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,7 +114,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form6";
+            this.Name = "Options";
             this.Text = "Options";
             this.ResumeLayout(false);
             this.PerformLayout();

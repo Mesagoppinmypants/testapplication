@@ -11,15 +11,15 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Form1 : Form
+    public partial class MainPage : Form
     {
-        public Form1()
+        public MainPage()
         {
             InitializeComponent();
         }
 
         // First load in
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainPage_Load(object sender, EventArgs e)
         {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             //clickSound.Play();
@@ -32,7 +32,7 @@ namespace TestApplication
             //MessageBox.Show("This function is coming soon.", "YouTube Button");
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.Stop();
-            Form2 yov = new Form2();
+            Yov yov = new Yov();
             yov.Show();
             //OpenFileDialog ofd = new OpenFileDialog();
             //if (ofd.ShowDialog() == DialogResult.OK)
@@ -47,7 +47,7 @@ namespace TestApplication
         private void button2_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("This function is coming soon.", "Facebook Button");
-            Form3 solv = new Form3();
+            Solv solv = new Solv();
             solv.Show();
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.Stop();
@@ -75,14 +75,14 @@ namespace TestApplication
         {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.Stop();
-            Form5 ios = new Form5();
+            Ios ios = new Ios();
             ios.Show();
         }
 
         // Options
         private void button5_Click(object sender, EventArgs e)
         {
-            Form6 options = new Form6();
+            Options options = new Options();
             options.Show();
         }
 

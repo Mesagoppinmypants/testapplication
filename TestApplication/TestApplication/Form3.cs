@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestApplication
 {
-    public partial class Form3 : Form
+    public partial class Solv : Form
     {
-        public Form3()
+        public Solv()
         {
             InitializeComponent();
         }

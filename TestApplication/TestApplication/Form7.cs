@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestApplication
 {
-    public partial class Form7 : Form
+    public partial class Extras : Form
     {
-        public Form7()
+        public Extras()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace TestApplication
         {
             // About
             this.Close();
-            Form8 about = new Form8();
+            About about = new About();
             about.Show();
         }
     }

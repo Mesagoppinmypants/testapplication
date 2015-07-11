@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form3
+    partial class Solv
     {
         /// <summary>
         /// Required designer variable.
@@ -41,13 +41,13 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.YouTube.com/user/SWGBrokovo", System.UriKind.Absolute);
             // 
-            // Form3
+            // Solv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form3";
+            this.Name = "Solv";
             this.Text = "Solvaxus Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

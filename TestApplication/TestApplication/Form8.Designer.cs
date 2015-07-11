@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form8
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // About
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "About";
+            this.Text = "About";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -40,7 +56,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Made by Iosnowore Kun ";
+            this.label1.Text = "Made by Iosnowore Kun";
             // 
             // label2
             // 
@@ -59,22 +75,6 @@
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Version v0.5";
-            // 
-            // Form8
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Form8";
-            this.Text = "About";
-            this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

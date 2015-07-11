@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form4
+    partial class Exi
     {
         /// <summary>
         /// Required designer variable.
@@ -41,13 +41,13 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.YouTube.com/user/XPPINMYPANTSX", System.UriKind.Absolute);
             // 
-            // Form4
+            // Exi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form4";
+            this.Name = "Exi";
             this.Text = "Exilos Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

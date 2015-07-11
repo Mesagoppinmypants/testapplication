@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form2
+    partial class Yov
     {
         /// <summary>
         /// Required designer variable.
@@ -41,13 +41,13 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://www.youtube.com/user/KunGaming", System.UriKind.Absolute);
             // 
-            // Form2
+            // Yov
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form2";
+            this.Name = "Yov";
             this.Text = "Yoverion Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

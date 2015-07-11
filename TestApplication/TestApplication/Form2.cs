@@ -11,9 +11,9 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Form2 : Form
+    public partial class Yov : Form
     {
-        public Form2()
+        public Yov()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace TestApplication
 
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        private void Yov_FormClosed(object sender, FormClosedEventArgs e)
         {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.Play();

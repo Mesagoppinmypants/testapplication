@@ -1,6 +1,6 @@
 ﻿namespace TestApplication
 {
-    partial class Form5
+    partial class Ios
     {
         /// <summary>
         /// Required designer variable.
@@ -41,13 +41,13 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.YouTube.com/user/XPPINMYPANTSX", System.UriKind.Absolute);
             // 
-            // Form5
+            // Ios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form5";
+            this.Name = "Ios";
             this.Text = "Iosnowore Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

@@ -11,9 +11,9 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Form6 : Form
+    public partial class Options : Form
     {
-        public Form6()
+        public Options()
         {
             InitializeComponent();
         }
@@ -84,7 +84,7 @@ namespace TestApplication
         }
 
         // This is when the page closes
-        private void Form6_FormClosed(object sender, FormClosedEventArgs e)
+        private void Options_FormClosed(object sender, FormClosedEventArgs e)
         {
            // Properties.Settings.Default.textbox = checkBox1.Checked;
         }
