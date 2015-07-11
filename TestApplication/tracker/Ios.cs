@@ -32,10 +32,6 @@ namespace TestApplication
             {
                 Properties.Settings.Default["FormSize"] = this.Size;
             }
-        }
-
-        private void Ios_FormClosing_1(object sender, FormClosingEventArgs e)
-        {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.PlayLooping();
         }
