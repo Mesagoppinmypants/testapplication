@@ -49,6 +49,7 @@
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form2";
             this.Text = "Yoverion Kun";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

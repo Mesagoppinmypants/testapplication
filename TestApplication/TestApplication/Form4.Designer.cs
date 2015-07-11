@@ -49,6 +49,7 @@
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form4";
             this.Text = "Exilos Kun";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
