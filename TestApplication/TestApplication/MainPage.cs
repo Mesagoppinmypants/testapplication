@@ -95,7 +95,7 @@ namespace TestApplication
         // Extras
         private void button6_Click(object sender, EventArgs e)
         {
-            Form7 extras = new Form7();
+            Extras extras = new Extras();
             extras.Show();
         }
 
