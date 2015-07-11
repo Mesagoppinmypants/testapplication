@@ -88,13 +88,13 @@ namespace TestApplication
         }
 
         // This is when the user changes the language option.
-/*        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "English")
-            {
-                this.TriggerLanguageChange("en");
+            //if (comboBox1.SelectedItem.ToString() == "English")
+            //{
+                //this.TriggerLanguageChange("en");
             }
-            else if (comboBox1.SelectedItem.ToString() == "Spanish")
+/*            else if (comboBox1.SelectedItem.ToString() == "Spanish")
             {
                 this.TriggerLanguageChange("sp");
             }
