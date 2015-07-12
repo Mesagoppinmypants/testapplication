@@ -14,6 +14,7 @@ using System.IO;
 
 namespace TestApplication
 {
+    //public partial class MainPage : Form
     public partial class MainPage : Form
     {
         public MainPage()
@@ -24,20 +25,24 @@ namespace TestApplication
         // First load in
         private void MainPage_Load(object sender, EventArgs e)
         {
+           
             // Music For First Load in
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            //SoundPlayer backgroundSound1 = new SoundPlayer(@"c:\projects\test.wav");
 
-            //backgroundSound.PlayLooping();
+                backgroundSound.PlayLooping(); // This will have to do for now until we can fix what's below.
+            //backgroundSound.PlaySync();
+            //backgroundSound1.PlaySync();
 
-            if (Options.checkBox2.Checked = true)
+            //if (checkBox2.Checked == true)
             {
-                backgroundSound.Stop();
+                //backgroundSound.Stop();
             }
-            else
+            //else
             {
-                backgroundSound.PlayLooping();
+                //backgroundSound.PlayLooping();
 
-                // Saves main page location
+                 //Saves main page location
                 if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
                 {
                     this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
