@@ -40,8 +40,6 @@ namespace TestApplication
         public void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             Do_Checked_checkBox2();
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //backgroundSound.Stop();
         }
 
         // Enables nightmode
@@ -58,8 +56,6 @@ namespace TestApplication
 
         public void Do_Checked_checkBox2()
         {
-            //SystemSounds.Hand.Play();
-            //MessageBox.Show("This function is coming soon.", "Disable Music");
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             if (checkBox2.Checked == true)
             {
