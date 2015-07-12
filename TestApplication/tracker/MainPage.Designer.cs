@@ -52,6 +52,8 @@
             this.button1.Text = "Exilos Kun";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button3_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // button2
             // 
@@ -65,6 +67,8 @@
             this.button2.Text = "Yoverion Kun";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button1_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button3
             // 
@@ -78,6 +82,8 @@
             this.button3.Text = "Solvaxus Kun";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button2_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button4
             // 
@@ -91,6 +97,8 @@
             this.button4.Text = "Iosnowore Kun";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button5
             // 
@@ -104,6 +112,8 @@
             this.button5.Text = "Options";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
             // label1
             // 
@@ -137,6 +147,8 @@
             this.button6.Text = "Extras";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
             // 
             // MainPage
             // 

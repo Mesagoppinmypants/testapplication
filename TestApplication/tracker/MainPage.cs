@@ -115,6 +115,72 @@ namespace TestApplication
             }
         }
 
+        // Yoverion Kun
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.ForeColor = System.Drawing.Color.Red;
+        }
+
+        // Exilos Kun
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.ForeColor = System.Drawing.Color.Red;
+        }
+
+        // Solvaxus Kun
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            button3.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            button3.ForeColor = System.Drawing.Color.Red;
+        }
+
+        // Iosnowore Kun
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            button4.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button4.ForeColor = System.Drawing.Color.Red;
+        }
+
+        // Options
+        private void button5_MouseHover(object sender, EventArgs e)
+        {
+            button5.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.ForeColor = System.Drawing.Color.Red;
+        }
+
+        // Extras
+        private void button6_MouseHover(object sender, EventArgs e)
+        {
+            button6.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button6_MouseLeave(object sender, EventArgs e)
+        {
+            button6.ForeColor = System.Drawing.Color.Red;
+        }
+
         // ----------------------------------------------------------- Try to get sound by string. ---------------------------------------------------------------------------------------------------------------------
 /*        private ResourceManager DJOResourcesManager;
 
