@@ -128,7 +128,7 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox2;
+        public System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;

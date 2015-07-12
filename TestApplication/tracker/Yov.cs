@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
-using TestApplication.Options;
-
 namespace TestApplication
 {
     public partial class Yov : Form
@@ -51,16 +49,16 @@ namespace TestApplication
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (TestApplication.Options.checkBox2.Checked = true)
+//            if (TestApplication.Options.checkBox2.Checked = true)
             {
-                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-                backgroundSound.Stop();
+//                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+//                backgroundSound.Stop();
             }
-            else
-            {
-                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-                backgroundSound.PlayLooping();
-            }
+//            else
+//            {
+//                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+//                backgroundSound.PlayLooping();
+//            }
             //MessageBox.Show("Sound should turn on now."); // For testing purposes
 
             /* DialogResult dialog = MessageBox.Show("Testing phase. -- Want to exit?",
