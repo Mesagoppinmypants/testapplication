@@ -91,22 +91,8 @@ namespace TestApplication
             extras.Show();
         }
 
-        // See if we can import these files and use them as strings
-        public void Initialize()
-        {
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //SoundPlayer clickSound = new SoundPlayer(@"c:\projects\click.wav");
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-        }
-
         public void MainPage_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                // Save setting
-                Properties.Settings.Default["FormSize"] = this.Size;
-                Properties.Settings.Default.Save();
-            }
             if (this.StartPosition == FormStartPosition.Manual)
             {
                 Properties.Settings.Default["FormPosition"] = this.StartPosition;
