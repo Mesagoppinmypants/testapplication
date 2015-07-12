@@ -53,6 +53,7 @@
             this.Text = "Iosnowore Kun";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ios_FormClosing);
+            this.Load += new System.EventHandler(this.Ios_Load);
             this.ResumeLayout(false);
 
         }
