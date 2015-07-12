@@ -35,9 +35,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -121,6 +121,22 @@
             this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             this.button5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button5_MouseMove);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.Font = new System.Drawing.Font("BankGothic Md BT", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Red;
+            this.button6.Location = new System.Drawing.Point(200, 256);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 50);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "Extras";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
+            this.button6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button6_MouseMove);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -141,40 +157,24 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.Font = new System.Drawing.Font("BankGothic Md BT", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Red;
-            this.button6.Location = new System.Drawing.Point(200, 256);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 50);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Extras";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
-            this.button6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button6_MouseMove);
-            // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick); 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::TestApplication.Properties.Resources.Background;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            //this.BackgroundImage = global::TestApplication.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(350, 318);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
