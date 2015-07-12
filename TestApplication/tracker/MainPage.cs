@@ -20,9 +20,9 @@ namespace TestApplication
         public MainPage()
         {
             // Timer for background images
-            this.BackgroundImage = Properties.Resources.Background1;
+       //     this.BackgroundImage = Properties.Resources.Background1;
             InitializeComponent();
-            Timer tm = new Timer();
+        /*    Timer tm = new Timer();
             tm.Interval = 1000;
             tm.Tick += new EventHandler(changeImage);
             tm.Start();
@@ -35,7 +35,7 @@ namespace TestApplication
             b1.Add(Properties.Resources.Background1);
             b1.Add(Properties.Resources.Background2);
             int index = DateTime.Now.Second % 2;
-            this.BackgroundImage = b1[index]; 
+            this.BackgroundImage = b1[index]; */
         }
 
         // First load in
@@ -161,22 +161,27 @@ namespace TestApplication
         private void button3_MouseHover(object sender, EventArgs e)
         {
             button3.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundImage = Properties.Resources.Background1;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
             button3.ForeColor = System.Drawing.Color.Red;
+            this.BackgroundImage = Properties.Resources.Background;
         }
 
         // Iosnowore Kun
         private void button4_MouseHover(object sender, EventArgs e)
         {
             button4.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundImage = Properties.Resources.Background2;
+        
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
             button4.ForeColor = System.Drawing.Color.Red;
+            this.BackgroundImage = Properties.Resources.Background;
         }
 
         // Options
@@ -214,11 +219,13 @@ namespace TestApplication
         private void button3_MouseMove(object sender, MouseEventArgs e)
         {
             button3.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundImage = Properties.Resources.Background1;
         }
 
         private void button4_MouseMove(object sender, MouseEventArgs e)
         {
             button4.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundImage = Properties.Resources.Background2;
         }
 
         private void button5_MouseMove(object sender, MouseEventArgs e)
