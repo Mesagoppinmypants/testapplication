@@ -20,8 +20,8 @@ namespace TestApplication
 
         private void Yov_FormLoad(object sender, EventArgs e)
         {
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //backgroundSound.Stop();
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            backgroundSound.Stop();
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -31,20 +31,7 @@ namespace TestApplication
 
         private void Yov_FormClosed(object sender, FormClosedEventArgs e)
         {
-            /* DialogResult dialog = MessageBox.Show("Testing phase. -- Want to exit?",
-                 "Exit", MessageBoxButtons.YesNo);
-             if (dialog == DialogResult.Yes)
-             {
-                 Application.Exit();
-             }
-             else if (dialog == DialogResult.No)
-             {
-                 e.Cancel = true;
-             }
-             //Do_Checked_checkBox2();
-             //MessageBox.Show("Sound should turn on now."); // For testing purposes
-             //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-             //backgroundSound.Play();*/
+        
         }
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
