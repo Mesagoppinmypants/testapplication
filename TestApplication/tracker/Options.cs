@@ -48,8 +48,6 @@ namespace TestApplication
 
         public void Do_Checked_checkBox1()
         {
-            SystemSounds.Hand.Play();
-            MessageBox.Show("This function is coming soon.", "Sound Effects Enable/Disable");
         }
 
 
