@@ -138,12 +138,22 @@ namespace TestApplication
         private void button2_MouseHover(object sender, EventArgs e)
         {
             button2.ForeColor = System.Drawing.Color.Black;
-            //this.BackgroundImage = Properties.Resources.Background1;
+            this.BackgroundImage = Properties.Resources.Background3;
+            this.button1.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             button2.ForeColor = System.Drawing.Color.Red;
+            this.button1.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            this.button5.Visible = true;
+            this.button6.Visible = true;
         }
 
         // Exilos Kun
@@ -175,6 +185,12 @@ namespace TestApplication
         {
             button4.ForeColor = System.Drawing.Color.Black;
             this.BackgroundImage = Properties.Resources.Background2;
+            this.BackgroundImage = Properties.Resources.Background3;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         
         }
 
@@ -182,60 +198,116 @@ namespace TestApplication
         {
             button4.ForeColor = System.Drawing.Color.Red;
             this.BackgroundImage = Properties.Resources.Background;
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button5.Visible = true;
+            this.button6.Visible = true;
         }
 
         // Options
         private void button5_MouseHover(object sender, EventArgs e)
         {
             button5.ForeColor = System.Drawing.Color.Black;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button5_MouseLeave(object sender, EventArgs e)
         {
             button5.ForeColor = System.Drawing.Color.Red;
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            this.button6.Visible = true;
         }
 
         // Extras
         private void button6_MouseHover(object sender, EventArgs e)
         {
             button6.ForeColor = System.Drawing.Color.Black;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
         }
 
         private void button6_MouseLeave(object sender, EventArgs e)
         {
             button6.ForeColor = System.Drawing.Color.Red;
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            this.button5.Visible = true;
         }
 
         private void button2_MouseMove(object sender, MouseEventArgs e)
         {
             button2.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundImage = Properties.Resources.Background3;
+            this.button1.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
         {
             button1.ForeColor = System.Drawing.Color.Black;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button3_MouseMove(object sender, MouseEventArgs e)
         {
             button3.ForeColor = System.Drawing.Color.Black;
             this.BackgroundImage = Properties.Resources.Background1;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button4_MouseMove(object sender, MouseEventArgs e)
         {
             button4.ForeColor = System.Drawing.Color.Black;
             this.BackgroundImage = Properties.Resources.Background2;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button5.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button5_MouseMove(object sender, MouseEventArgs e)
         {
             button5.ForeColor = System.Drawing.Color.Black;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button6.Visible = false;
         }
 
         private void button6_MouseMove(object sender, MouseEventArgs e)
         {
             button6.ForeColor = System.Drawing.Color.Black;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.button5.Visible = false;
         }
 
         // Title color change
@@ -258,54 +330,5 @@ namespace TestApplication
             //int B = rand.Next(0, 255);
             //label1.ForeColor = Color.FromArgb(A, R, G, B);
         }
-
-        // ----------------------------------------------------------- Try to get sound by string. ---------------------------------------------------------------------------------------------------------------------
-/*        private ResourceManager DJOResourcesManager;
-
-        private bool _soundOption;
-
-        public bool soundOption
-        {
-            get
-            {
-                return _soundOption;
-            }
-            set
-            {
-                _soundOption = value;
-                SetAppSetting("SoundEnable", ((_soundOption == true) ? "true : "false"));
-
-            }
-        }
-        
-        DJOResourcesManager = new ResourceManager("DJO Tracker.DJORes", Assembly.GetExecutingAssembly());
-
-
-        public Stream GetSound(string filename)
-        {
-            byte[] x = ((byte[])DJOResourcesManager.GetObject(filename));
-
-            if (x == null) { return null; }
-
-            return new MemoryStream(x);
-        }
-        
-        public void PlaySound(string filename)
-        {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(this.GetSound(filename));
-            if (this.soundOption) { player.Play (); }
-        }
-        
-        public void SetAppSetting(string key, string value)
-        {
-            if (config.AppSettings.Settings[key] != null)
-            {
-                config.AppSettings.Settings.Remove(key);
-            }
-            config.AppSettings.Settings.Add(key, value);
-
-            try
-            {
-                config.Save(ConfigurationSaveMode.Modified);*/
     }
 }

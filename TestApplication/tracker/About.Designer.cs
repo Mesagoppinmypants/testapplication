@@ -69,7 +69,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(334, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "If you have any questions you can email me at iosnowore@gmail.com";
+            this.label4.Text = "If you have any questions you can email me at \r\niosnowore@gmail.com";
             // 
             // About
             // 

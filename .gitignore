@@ -29,8 +29,8 @@
 *.hex
 
 # Debug files
-TestApplication/TestApplication/obj/Debug/
-TestApplication/TestApplication/bin/Debug/
+TestApplication/tracker/obj/Debug/*
+TestApplication/tracker/bin/Debug/*
 
 
 # Custom Added Ignores
@@ -41,3 +41,6 @@ TestApplication/TestApplication/bin/Debug/
 *.settings
 *.resx
 *.application
+*.Cache
+*.pdb
+*.suo
