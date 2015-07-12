@@ -11,7 +11,7 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Yov : Form
+    public partial class Yov : GuiController
     {
         public Yov()
         {
@@ -31,11 +31,13 @@ namespace TestApplication
 
         private void Yov_FormClosed(object sender, FormClosedEventArgs e)
         {
-        
+
         }
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
+            DisableSoundCheck();
+        }
 
         }
     }

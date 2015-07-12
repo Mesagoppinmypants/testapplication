@@ -52,7 +52,6 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Exilos Kun";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = true;
             this.button1.Click += new System.EventHandler(this.button3_Click);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
@@ -166,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TestApplication.Properties.Resources.Background;
+            this.BackgroundImage = global::TestApplication.Properties.Resources.BackgroundMain;
             this.ClientSize = new System.Drawing.Size(350, 318);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
