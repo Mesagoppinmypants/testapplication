@@ -36,27 +36,7 @@ namespace TestApplication
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
-//            if (TestApplication.Options.checkBox2.Checked = true)
-            {
-//                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-//                backgroundSound.Stop();
-            }
-//            else
-//            {
-//                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-//                backgroundSound.PlayLooping();
-//            }
-            //MessageBox.Show("Sound should turn on now."); // For testing purposes
 
-            /* DialogResult dialog = MessageBox.Show("Testing phase. -- Want to exit?",
-               "Exit", MessageBoxButtons.YesNo);
-             if (dialog == DialogResult.Yes)
-             {
-                 Application.Exit();
-             }
-             else if (dialog == DialogResult.No)
-             {
-                 e.Cancel = true;*/
         }
     }
 }

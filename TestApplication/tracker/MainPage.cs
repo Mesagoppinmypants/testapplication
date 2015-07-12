@@ -26,7 +26,15 @@ namespace TestApplication
         {
             // Music For First Load in
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            backgroundSound.PlayLooping();
+            //backgroundSound.PlayLooping();
+
+             if (Options.checkBox2.Checked = true)
+            {
+                backgroundSound.Stop();
+            }
+            else
+            {
+                backgroundSound.PlayLooping();
             
             // Saves main page location
             if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)

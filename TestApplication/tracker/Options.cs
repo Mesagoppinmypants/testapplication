@@ -24,6 +24,11 @@ namespace TestApplication
             checkBox2.Checked = Properties.Settings.Default.MusicDisable;
             checkBox3.Checked = Properties.Settings.Default.NightMode;
             comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect; // Enable when saving is fixed below.
+
+            if (comboBox1.SelectedText == "clear")
+            {
+                comboBox1.Text = "English";
+            }
         }
         // Disable sound effects
         public void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -76,11 +81,7 @@ namespace TestApplication
         // When the user clicks the "apply" button
         public void button1_Click(object sender, EventArgs e)
         {
-            //Properties.Settings.Default.MusicDisable = newValueCheckBox;
-            //Properties.Settings.Default.Save();
             this.Close();
-            //SystemSounds.Hand.Play();
-            //MessageBox.Show("The save settings function has not been implemented yet.", "Saving Settings");
         }
 
         // This is when the user changes the language option.
@@ -158,7 +159,7 @@ public class BaseLanguageForm:Form
             Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
             Properties.Settings.Default.MusicDisable = checkBox2.Checked;
             Properties.Settings.Default.NightMode = checkBox3.Checked;
-            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedValue; // FIXME
+            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedText; // FIXME
             Properties.Settings.Default.Save();
         }
     }
