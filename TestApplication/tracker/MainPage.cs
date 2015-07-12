@@ -26,20 +26,22 @@ namespace TestApplication
         {
             // Music For First Load in
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+
             //backgroundSound.PlayLooping();
 
-             if (Options.checkBox2.Checked = true)
+            if (Options.checkBox2.Checked = true)
             {
                 backgroundSound.Stop();
             }
             else
             {
                 backgroundSound.PlayLooping();
-            
-            // Saves main page location
-            if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
-            {
-                this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
+
+                // Saves main page location
+                if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
+                {
+                    this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
+                }
             }
         }
 
