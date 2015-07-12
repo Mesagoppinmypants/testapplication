@@ -19,7 +19,23 @@ namespace TestApplication
     {
         public MainPage()
         {
+            // Timer for background images
+            this.BackgroundImage = Properties.Resources.Background1;
             InitializeComponent();
+            Timer tm = new Timer();
+            tm.Interval = 1000;
+            tm.Tick += new EventHandler(changeImage);
+            tm.Start();
+        }
+
+        // Background images
+        private void changeImage(object sender, EventArgs e)
+        {
+            List<Bitmap> b1 = new List<Bitmap>();
+            b1.Add(Properties.Resources.Background1);
+            b1.Add(Properties.Resources.Background2);
+            int index = DateTime.Now.Second % 2;
+            this.BackgroundImage = b1[index]; 
         }
 
         // First load in
@@ -48,6 +64,8 @@ namespace TestApplication
                 {
                     this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
                 }
+                timer1.Start();
+                timer1.Enabled = true;
             }
         }
 
@@ -120,6 +138,7 @@ namespace TestApplication
         private void button2_MouseHover(object sender, EventArgs e)
         {
             button2.ForeColor = System.Drawing.Color.Black;
+            //this.BackgroundImage = Properties.Resources.Background1;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
@@ -210,6 +229,27 @@ namespace TestApplication
         private void button6_MouseMove(object sender, MouseEventArgs e)
         {
             button6.ForeColor = System.Drawing.Color.Black;
+        }
+
+        // Title color change
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (label1.ForeColor == Color.Black)
+            {
+                label1.ForeColor = Color.Red;
+                timer1.Interval = 500;
+            }
+            else
+            {
+                label1.ForeColor = Color.Black;
+                timer1.Interval = 500;
+            }
+            //Random rand = new Random();
+            //int A = rand.Next(0, 255);
+            //int R = rand.Next(0, 255);
+            //int G = rand.Next(0, 255);
+            //int B = rand.Next(0, 255);
+            //label1.ForeColor = Color.FromArgb(A, R, G, B);
         }
 
         // ----------------------------------------------------------- Try to get sound by string. ---------------------------------------------------------------------------------------------------------------------

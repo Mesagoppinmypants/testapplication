@@ -176,6 +176,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon256Main.ico" />
+    <None Include="Resources\Background2.png" />
+    <None Include="Resources\Background1.png" />
     <None Include="Resources\MainImage.bmp" />
   </ItemGroup>
   <ItemGroup>
