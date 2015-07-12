@@ -30,15 +30,16 @@ namespace TestApplication
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             //SoundPlayer backgroundSound1 = new SoundPlayer(@"c:\projects\test.wav");
 
-                backgroundSound.PlayLooping(); // This will have to do for now until we can fix what's below.
+            backgroundSound.PlayLooping(); // This will have to do for now until we can fix what's below.
             //backgroundSound.PlaySync();
             //backgroundSound1.PlaySync();
 
+            // checkBox2 = CheckBox Options.checkBox2
             //if (checkBox2.Checked == true)
             {
                 //backgroundSound.Stop();
             }
-            //else
+           // else
             {
                 //backgroundSound.PlayLooping();
 
@@ -179,6 +180,36 @@ namespace TestApplication
         private void button6_MouseLeave(object sender, EventArgs e)
         {
             button6.ForeColor = System.Drawing.Color.Red;
+        }
+
+        private void button2_MouseMove(object sender, MouseEventArgs e)
+        {
+            button2.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            button1.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button3_MouseMove(object sender, MouseEventArgs e)
+        {
+            button3.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button4_MouseMove(object sender, MouseEventArgs e)
+        {
+            button4.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button5_MouseMove(object sender, MouseEventArgs e)
+        {
+            button5.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void button6_MouseMove(object sender, MouseEventArgs e)
+        {
+            button6.ForeColor = System.Drawing.Color.Black;
         }
 
         // ----------------------------------------------------------- Try to get sound by string. ---------------------------------------------------------------------------------------------------------------------

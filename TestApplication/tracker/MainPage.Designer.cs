@@ -54,6 +54,7 @@
             this.button1.Click += new System.EventHandler(this.button3_Click);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // button2
             // 
@@ -69,6 +70,7 @@
             this.button2.Click += new System.EventHandler(this.button1_Click);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
             // button3
             // 
@@ -84,6 +86,7 @@
             this.button3.Click += new System.EventHandler(this.button2_Click);
             this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
+            this.button3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button3_MouseMove);
             // 
             // button4
             // 
@@ -99,6 +102,7 @@
             this.button4.Click += new System.EventHandler(this.button4_Click);
             this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
+            this.button4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button4_MouseMove);
             // 
             // button5
             // 
@@ -114,6 +118,7 @@
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
+            this.button5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button5_MouseMove);
             // 
             // label1
             // 
@@ -149,6 +154,7 @@
             this.button6.Click += new System.EventHandler(this.button6_Click);
             this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
+            this.button6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button6_MouseMove);
             // 
             // MainPage
             // 
