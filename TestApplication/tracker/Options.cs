@@ -55,15 +55,13 @@ namespace TestApplication
         {
             //SystemSounds.Hand.Play();
             //MessageBox.Show("This function is coming soon.", "Disable Music");
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             if (checkBox2.Checked == true)
             {
-                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-                //TestApplication.Mainpage.backgroundSound.Stop();
                 backgroundSound.Stop();
             }
             else
             {
-                SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
                 backgroundSound.Play();
             }
         }
