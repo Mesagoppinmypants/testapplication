@@ -47,17 +47,7 @@ namespace TestApplication
             //SoundPlayer backgroundSound1 = new SoundPlayer(@"c:\projects\test.wav");
 
             backgroundSound.PlayLooping(); // This will have to do for now until we can fix what's below.
-            //backgroundSound.PlaySync();
-            //backgroundSound1.PlaySync();
-
-            // checkBox2 = CheckBox Options.checkBox2
-            //if (checkBox2.Checked == true)
             {
-                //backgroundSound.Stop();
-            }
-           // else
-            {
-                //backgroundSound.PlayLooping();
 
                  //Saves main page location
                 if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
