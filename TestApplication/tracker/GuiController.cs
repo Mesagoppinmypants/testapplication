@@ -7,24 +7,22 @@ using System.Media;
 
 namespace TestApplication
 {
-    class GuiController : Options
+    public class GuiController
     {
+        Options Op = new Options();
+
         public void DisableSoundCheck(object sender, EventArgs e)
+        //public void DisableSoundCheck()
         {
-            // Music For First Load in
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wave");
 
-            //backgroundSound.Stop(); // This will have to do for now until we can fix what's below.
-
-            if (checkBox2.Checked == true)
+            if (Op.checkBox2.Checked == true)
             {
                 backgroundSound.Stop();
             }
             else
             {
                 backgroundSound.PlayLooping();
-                //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-                //backgroundSound.PlayLooping();
             }
         }
     }

@@ -11,8 +11,9 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Yov : GuiController
+    public partial class Yov : Form
     {
+
         public Yov()
         {
             InitializeComponent();
@@ -36,9 +37,9 @@ namespace TestApplication
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DisableSoundCheck();
-        }
-
+            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wave");
+            backgroundSound.PlayLooping();
+            //Controller.DisableSoundCheck();
         }
     }
 }
