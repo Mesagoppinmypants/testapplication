@@ -24,11 +24,6 @@ namespace TestApplication
             checkBox2.Checked = Properties.Settings.Default.MusicDisable;
             checkBox3.Checked = Properties.Settings.Default.NightMode;
             comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect; // Enable when saving is fixed below.
-
-            if (comboBox1.SelectedText == "clear")
-            {
-                comboBox1.Text = "English";
-            }
         }
         // Disable sound effects
         public void checkBox1_CheckedChanged(object sender, EventArgs e)

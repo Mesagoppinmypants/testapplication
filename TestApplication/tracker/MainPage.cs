@@ -124,189 +124,101 @@ namespace TestApplication
             }
         }
 
-        // Yoverion Kun
+        // Exilos
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background3;
-            this.button1.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = true;
-            this.button3.Visible = true;
-            this.button4.Visible = true;
-            this.button5.Visible = true;
-            this.button6.Visible = true;
+            this.button2.BackColor = System.Drawing.Color.Black;
         }
 
-        // Exilos Kun
+        // Yoverion Kun
         private void button1_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background4;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button2.Visible = true;
-            this.button3.Visible = true;
-            this.button4.Visible = true;
-            this.button5.Visible = true;
-            this.button6.Visible = true;
+            this.button1.BackColor = System.Drawing.Color.Black;
         }
 
         // Solvaxus Kun
         private void button3_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background1;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button3.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = true;
-            this.button2.Visible = true;
-            this.button4.Visible = true;
-            this.button5.Visible = true;
-            this.button6.Visible = true;
+            this.button3.BackColor = System.Drawing.Color.Black;
         }
 
         // Iosnowore Kun
         private void button4_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background2;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button4.BackColor = System.Drawing.Color.Yellow;
         
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = true;
-            this.button2.Visible = true;
-            this.button3.Visible = true;
-            this.button5.Visible = true;
-            this.button6.Visible = true;
+            this.button4.BackColor = System.Drawing.Color.Black;
         }
 
         // Options
         private void button5_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button6.Visible = false;
+            this.button5.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button5_MouseLeave(object sender, EventArgs e)
         {
-            this.button1.Visible = true;
-            this.button2.Visible = true;
-            this.button3.Visible = true;
-            this.button4.Visible = true;
-            this.button6.Visible = true;
+            this.button5.BackColor = System.Drawing.Color.Black;
         }
 
         // Extras
         private void button6_MouseHover(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
+            this.button6.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button6_MouseLeave(object sender, EventArgs e)
         {
-            this.button1.Visible = true;
-            this.button2.Visible = true;
-            this.button3.Visible = true;
-            this.button4.Visible = true;
-            this.button5.Visible = true;
+            this.button6.BackColor = System.Drawing.Color.Black;
         }
 
         private void button2_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background3;
-            this.button1.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background4;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button3_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background1;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button3.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button4_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.Background2;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button5.Visible = false;
-            this.button6.Visible = false;
+            this.button4.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button5_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button6.Visible = false;
+            this.button5.BackColor = System.Drawing.Color.Yellow;
         }
 
         private void button6_MouseMove(object sender, MouseEventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.BackgroundMain;
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.button4.Visible = false;
-            this.button5.Visible = false;
+            this.button6.BackColor = System.Drawing.Color.Yellow;
         }
 
         // Title color change

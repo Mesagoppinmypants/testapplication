@@ -13,6 +13,7 @@ namespace TestApplication
 {
     public partial class Yov : Form
     {
+        Options options = new Options();
 
         public Yov()
         {
@@ -37,9 +38,9 @@ namespace TestApplication
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wave");
-            backgroundSound.PlayLooping();
-            //Controller.DisableSoundCheck();
+            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            //backgroundSound.PlayLooping();
+            options.Do_Checked_checkBox2();
         }
     }
 }
