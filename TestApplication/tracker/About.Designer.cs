@@ -38,6 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(76, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 13);
@@ -47,6 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(66, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 13);
@@ -56,6 +58,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(101, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
@@ -64,17 +67,20 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 173);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(12, 179);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(334, 13);
+            this.label4.Size = new System.Drawing.Size(260, 59);
             this.label4.TabIndex = 3;
-            this.label4.Text = "If you have any questions you can email me at \r\niosnowore@gmail.com";
+            this.label4.Text = "If you have any questions/comments or if you find any bugs you can email me at \r\n" +
+    "iosnowore@gmail.com";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);

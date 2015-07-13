@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Media;
 using System.Resources;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace TestApplication
 {
@@ -39,9 +40,19 @@ namespace TestApplication
         }
 
         // First load in
+        //int mouseX = 0, MouseY = 0;
+        //bool mouseDown;
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
         private void MainPage_Load(object sender, EventArgs e)
         {
-           
             // Music For First Load in
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             //SoundPlayer backgroundSound1 = new SoundPlayer(@"c:\projects\test.wav");
@@ -240,6 +251,52 @@ namespace TestApplication
             //int G = rand.Next(0, 255);
             //int B = rand.Next(0, 255);
             //label1.ForeColor = Color.FromArgb(A, R, G, B);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button7_MouseHover(object sender, EventArgs e)
+        {
+            this.button7.BackColor = System.Drawing.Color.Yellow;
+        }
+
+        private void button7_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.button7.BackColor = System.Drawing.Color.Yellow;
+        }
+
+        private void button7_MouseLeave(object sender, EventArgs e)
+        {
+            this.button7.BackColor = System.Drawing.Color.Black;
+        }
+
+        private void MainPage_MouseDown(object sender, MouseEventArgs e)
+        {
+            //mouseDown = true;
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void MainPage_MouseMove(object sender, MouseEventArgs e)
+        {
+        //    if (mouseDown)
+            {
+        //        mouseX = MousePosition.X - 225;
+         //       MouseY = MousePosition.Y - 225;
+
+          //      this.SetDesktopLocation(mouseX, MouseY);
+            }
+        }
+
+        private void MainPage_MouseUp(object sender, MouseEventArgs e)
+        {
+         //   mouseDown = false;
         }
     }
 }

@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -110,9 +111,9 @@
             this.button5.BackColor = System.Drawing.Color.Black;
             this.button5.Font = new System.Drawing.Font("BankGothic Md BT", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(12, 256);
+            this.button5.Location = new System.Drawing.Point(242, 250);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 50);
+            this.button5.Size = new System.Drawing.Size(100, 25);
             this.button5.TabIndex = 8;
             this.button5.Text = "Options";
             this.button5.UseVisualStyleBackColor = false;
@@ -126,9 +127,9 @@
             this.button6.BackColor = System.Drawing.Color.Black;
             this.button6.Font = new System.Drawing.Font("BankGothic Md BT", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Red;
-            this.button6.Location = new System.Drawing.Point(200, 256);
+            this.button6.Location = new System.Drawing.Point(242, 281);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 50);
+            this.button6.Size = new System.Drawing.Size(100, 25);
             this.button6.TabIndex = 9;
             this.button6.Text = "Extras";
             this.button6.UseVisualStyleBackColor = false;
@@ -161,12 +162,29 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Black;
+            this.button7.Font = new System.Drawing.Font("BankGothic Md BT", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Red;
+            this.button7.Location = new System.Drawing.Point(242, 219);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 25);
+            this.button7.TabIndex = 10;
+            this.button7.Text = "Exit";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
+            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
+            this.button7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button7_MouseMove);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TestApplication.Properties.Resources.BackgroundMain;
             this.ClientSize = new System.Drawing.Size(350, 318);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -174,7 +192,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -182,6 +200,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "<DJO> Tracker";
             this.Load += new System.EventHandler(this.MainPage_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPage_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPage_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainPage_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,6 +219,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button7;
     }
 }
 
