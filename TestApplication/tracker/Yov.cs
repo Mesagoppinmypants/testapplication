@@ -11,7 +11,7 @@ using System.Media;
 
 namespace TestApplication
 {
-    public partial class Yov : Options
+    public partial class Yov : Form
     {
         //Options options = new Options();
 
@@ -24,7 +24,6 @@ namespace TestApplication
         {
             SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             backgroundSound.Stop();
-            this.checkBox1.Visible = false;
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -41,7 +40,7 @@ namespace TestApplication
         {
             //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
             //backgroundSound.PlayLooping();
-            Do_Checked_checkBox2();
+            //Do_Checked_checkBox2();
         }
     }
 }
