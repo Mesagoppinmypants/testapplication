@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
@@ -48,31 +41,34 @@ namespace TestApplication
         {
         }
 
-
         public void Do_Checked_checkBox2()
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            if (checkBox2.Checked == true)
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
+            if (!Properties.Settings.Default.MusicDisable)
             {
-                backgroundSound.Stop();
+                backgroundSound.Play();
             }
             else
             {
-                backgroundSound.Play();
+                backgroundSound.Stop();
             }
         }
 
 
         public void Do_Checked_checkBox3()
         {
-            SystemSounds.Hand.Play();
-            MessageBox.Show("This function is coming soon.", "Night Mode Enable/Disable");
+            if (checkBox3.Checked == true)
+            {
+                checkBox3.Checked = false;
+                SystemSounds.Hand.Play();
+                MessageBox.Show("This function is coming soon.", "Night Mode Enable/Disable");
+            }
         }
 
         // When the user clicks the "apply" button
         public void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         // This is when the user changes the language option.

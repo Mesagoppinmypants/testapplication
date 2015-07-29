@@ -1,2 +1,1 @@
-# testapplication
-Test Application
+# <DJO> Fan Tracker

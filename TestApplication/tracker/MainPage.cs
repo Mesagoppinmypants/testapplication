@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-using System.Resources;
-using System.IO;
 using System.Runtime.InteropServices;
 
 namespace TestApplication
@@ -54,26 +45,31 @@ namespace TestApplication
         private void MainPage_Load(object sender, EventArgs e)
         {
             // Music For First Load in
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //SoundPlayer backgroundSound1 = new SoundPlayer(@"c:\projects\test.wav");
+            Options options = new Options();
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
 
-            backgroundSound.PlayLooping(); // This will have to do for now until we can fix what's below.
+            if (!Properties.Settings.Default.MusicDisable)
             {
-
-                 //Saves main page location
-                if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
-                {
-                    this.StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
-                }
-                timer1.Start();
-                timer1.Enabled = true;
+                backgroundSound.PlayLooping();
             }
+            else
+            {
+                backgroundSound.Stop();
+            }
+
+            //Saves main page location
+            if (Properties.Settings.Default.FormPosition.X != 0 && Properties.Settings.Default.FormPosition.Y != 0)
+            {
+                StartPosition = (FormStartPosition)Properties.Settings.Default["FormPosition"];
+            }
+            timer1.Start();
+            timer1.Enabled = true;
         }
 
         // Yoverion Kun's YouTube
         private void button1_Click(object sender, EventArgs e)
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
             backgroundSound.Stop();
             Yov yov = new Yov();
             yov.Show();
@@ -84,7 +80,7 @@ namespace TestApplication
         {
             Solv solv = new Solv();
             solv.Show();
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
             backgroundSound.Stop();
         }
 
@@ -100,7 +96,7 @@ namespace TestApplication
         // Iosnowore Kun's YouTube
         private void button4_Click(object sender, EventArgs e)
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
             backgroundSound.Stop();
             Ios ios = new Ios();
             ios.Show();
