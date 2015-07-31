@@ -82,72 +82,9 @@ namespace TestApplication
         // This is when the user changes the language option.
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (comboBox1.SelectedItem.ToString() == "English")
-            //{
-                //this.TriggerLanguageChange("en");
-            }
-/*            else if (comboBox1.SelectedItem.ToString() == "Spanish")
-            {
-                this.TriggerLanguageChange("sp");
-            }
-        }
-       
-        public class LanguageArts : EventArgs
-        {
-            string _languageSymbol;
-        /// <summary>
-        /// Gets the language symble.
-        /// </summary>
-        public string LanguageSymbol
-        {
-            get { return _languageSymbol; }
+
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="LanguageArgs"/> class.
-        /// </summary>
-        /// <param name="symbol">The symbol.</param>
-        public LanguageArgs(string symbol)
-        {
-            this._languageSymbol = symbol;
-        }
-}
-/// <summary>
-/// A Base class that your class should derivative from.
-/// </summary>
-/// <param name="languageSymbol"></param>
-public class BaseLanguageForm:Form
-{
-        /// <summary>
-        /// Triggers the language change event.
-        /// </summary>
-        /// <param name="languageSymbol">The language Symbol.</param>
-        protected void TriggerLanguageChange(string languageSymbol)
-        {
-            if (Options.onLanguageChanged != null)
-            {
-                LanguageArgs args = new LanguageArgs(languageSymbol);
-                Options.onLanguageChanged(this, args);
-            }
-        }
-
-        protected static event EventHandler<LanguageArgs> onLanguageChanged;
-
-        public BaseLanguageForm()
-        {
-            BaseLanguageForm.onLanguageChanged += new EventHandler<LanguageArgs>(BaseLanguageForm_onLanguageChanged);
-        }
-
-        void BasicLanguageForm_onLanguageChanged(object sender, LanguageArgs e)
-        {
-            string lang = e.LanguageSymbol;
-            foreach (Control c in this.Controls)
-            {
-                ComponentResourceManager crm = new ComponentResourceManager(typeof(Options));
-                crm.ApplyResources(c, c.Name, new CultureInfo(lang));
-            }
-        }
-*/
         // This is when the page closes
         public void Options_FormClosed(object sender, FormClosedEventArgs e)
         {
