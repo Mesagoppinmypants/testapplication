@@ -20,8 +20,8 @@ namespace TestApplication
 
         private void Exi_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            backgroundSound.PlayLooping();
+            GuiController control = new GuiController();
+            control.SoundChecker();
         }
     }
 }

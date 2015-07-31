@@ -16,7 +16,7 @@ namespace TestApplication
             checkBox1.Checked = Properties.Settings.Default.EffectsDisable;
             checkBox2.Checked = Properties.Settings.Default.MusicDisable;
             checkBox3.Checked = Properties.Settings.Default.NightMode;
-            comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect; // Enable when saving is fixed below.
+            comboBox1.SelectedItem = Properties.Settings.Default.LanguageSelect;
         }
         // Disable sound effects
         public void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace TestApplication
         // Disables music
         public void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            Do_Checked_checkBox2();
+
         }
 
         // Enables nightmode
@@ -43,12 +43,12 @@ namespace TestApplication
 
         public void Do_Checked_checkBox2()
         {
-            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
-            if (!Properties.Settings.Default.MusicDisable)
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
+            //if (!Properties.Settings.Default.MusicDisable)
             {
-                backgroundSound.Play();
+                //backgroundSound.Play();
             }
-            else
+            //else
             {
                 backgroundSound.Stop();
             }
@@ -69,6 +69,18 @@ namespace TestApplication
         public void button1_Click(object sender, EventArgs e)
         {
             Close();
+
+            Do_Checked_checkBox2();
+
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
+            if (checkBox2.Checked == false)
+                backgroundSound.Play();
+
+            Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
+            Properties.Settings.Default.MusicDisable = checkBox2.Checked;
+            Properties.Settings.Default.NightMode = checkBox3.Checked;
+            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedText; // FIXME
+            Properties.Settings.Default.Save();
         }
 
         // This is when the user changes the language option.
@@ -143,11 +155,7 @@ public class BaseLanguageForm:Form
         // This is when the page closes
         public void Options_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
-            Properties.Settings.Default.MusicDisable = checkBox2.Checked;
-            Properties.Settings.Default.NightMode = checkBox3.Checked;
-            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedText; // FIXME
-            Properties.Settings.Default.Save();
+
         }
     }
 }

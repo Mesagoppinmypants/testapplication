@@ -18,7 +18,6 @@ namespace TestApplication
             InitializeComponent();
         }
 
-        // Loads last saved window size.
         private void Ios_Load(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.FormSize.Width != 0 && Properties.Settings.Default.FormSize.Height != 0)
@@ -27,15 +26,10 @@ namespace TestApplication
             }
         }
 
-        // Saves window size before closing.
         private void Ios_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                Properties.Settings.Default["FormSize"] = this.Size;
-            }
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            backgroundSound.PlayLooping();
+            GuiController control = new GuiController();
+            control.SoundChecker();
         }
     }
 }

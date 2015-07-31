@@ -22,7 +22,7 @@ namespace TestApplication
 
         private void Yov_FormLoad(object sender, EventArgs e)
         {
-            SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
             backgroundSound.Stop();
         }
 
@@ -38,9 +38,8 @@ namespace TestApplication
 
         private void Yov_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //SoundPlayer backgroundSound = new SoundPlayer(@"c:\projects\background.wav");
-            //backgroundSound.PlayLooping();
-            //Do_Checked_checkBox2();
+            GuiController control = new GuiController();
+            control.SoundChecker();
         }
     }
 }

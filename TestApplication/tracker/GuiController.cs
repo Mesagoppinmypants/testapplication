@@ -9,6 +9,15 @@ namespace TestApplication
 {
     public class GuiController
     {
+        public void SoundChecker()
+        {
+            Options options = new Options();
 
+            if (options.checkBox2.Checked == false)
+            {
+                SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
+                backgroundSound.PlayLooping();
+            }
+        }
     }
 }
