@@ -20,7 +20,7 @@ namespace TestApplication
         private void button1_Click(object sender, EventArgs e)
         {
             // About
-            this.Close();
+            Close();
             About about = new About();
             about.Show();
         }

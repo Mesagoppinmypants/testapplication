@@ -20,10 +20,7 @@ namespace TestApplication
 
         private void Ios_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.FormSize.Width != 0 && Properties.Settings.Default.FormSize.Height != 0)
-            {
-                this.Size = (Size)Properties.Settings.Default["FormSize"];
-            }
+
         }
 
         private void Ios_FormClosing(object sender, FormClosingEventArgs e)

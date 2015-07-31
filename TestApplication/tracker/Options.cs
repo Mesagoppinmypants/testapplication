@@ -68,19 +68,15 @@ namespace TestApplication
         // When the user clicks the "apply" button
         public void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            GuiController controller = new GuiController();
 
+            Close();
+            controller.SaveState();
             Do_Checked_checkBox2();
 
             SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
             if (checkBox2.Checked == false)
                 backgroundSound.Play();
-
-            Properties.Settings.Default.EffectsDisable = checkBox1.Checked;
-            Properties.Settings.Default.MusicDisable = checkBox2.Checked;
-            Properties.Settings.Default.NightMode = checkBox3.Checked;
-            //Properties.Settings.Default.LanguageSelect = comboBox1.SelectedText; // FIXME
-            Properties.Settings.Default.Save();
         }
 
         // This is when the user changes the language option.

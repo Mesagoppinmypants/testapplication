@@ -19,5 +19,15 @@ namespace TestApplication
                 backgroundSound.PlayLooping();
             }
         }
+              
+        public void SaveState()
+        {
+            Options options = new Options();
+
+            Properties.Settings.Default.EffectsDisable = options.checkBox1.Checked;
+            Properties.Settings.Default.MusicDisable = options.checkBox2.Checked;
+            Properties.Settings.Default.NightMode = options.checkBox3.Checked;
+            Properties.Settings.Default.Save();
+        }
     }
 }
