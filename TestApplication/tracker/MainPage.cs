@@ -46,7 +46,7 @@ namespace TestApplication
         {
             // Music For First Load in
             Options options = new Options();
-            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.mp3");
+            SoundPlayer backgroundSound = new SoundPlayer(Program.ResourcesFolder + "background.wav");
 
             if (!Properties.Settings.Default.MusicDisable)
             {
